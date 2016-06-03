@@ -6,6 +6,17 @@ DNASeq = 'ATGAAC'
 
 print ('Sequence ' + DNASeq )
 
-SeqLength = len ( DNASeq )
+SeqLength = float( len ( DNASeq ) )
 
-print( SeqLength )
+print( 'Length is' + str( SeqLength ) )
+
+
+NumberA = DNASeq.count( 'A' )
+NumberT = DNASeq.count( 'T' )
+NumberG = DNASeq.count( 'G' )
+NumberC = DNASeq.count( 'C' )
+
+print('A: ' + str( NumberA / SeqLength ) )
+print('T: ' + str( NumberT / SeqLength ) )
+print('G: ' + str( NumberG / SeqLength ) )
+print('C: ' + str( NumberC / SeqLength ) )
