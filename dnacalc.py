@@ -2,7 +2,9 @@
 
 # This is a comment
 
-DNASeq = 'ATGAAC'
+DNASeq = raw_input ( "Enter DNA Sequence:" )
+
+DNASeq = DNASeq.upper()
 
 print ('Sequence ' + DNASeq )
 
