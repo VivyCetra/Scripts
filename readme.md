@@ -1,6 +1,7 @@
 # Script
 
-This folder contains a variety of scripts I have developed and modified..
+This folder contains a bunch of scripts from the practice classes from neptune bioinformatics course 2016.
 
+##New information
 
-## whatever something
+We are learning!
