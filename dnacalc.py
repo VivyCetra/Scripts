@@ -9,22 +9,24 @@ print ('Sequence ' + DNASeq )
 
 SeqLength = float ( len ( DNASeq ) )
 
+
+TotalStrong = 0
+TotalWeak = 0
+
+Bases = "CGTA"
+
+for Base in Bases:
+	Count = DNASeq.count( Base )
+	Frequency = Count / SeqLength
+	print ( '{}: {:.2f}'.format ( Base, Frequency ) )
+	if Base in 'GC' : 
+		TotalStrong = TotalStrong + Count
+	else:
+		TotalWeak = TotalWeak + Count
+	
+
 print( 'Length is' + str ( SeqLength ) )
 
-
-NumberA = DNASeq.count( 'A' )
-NumberT = DNASeq.count( 'T' )
-NumberG = DNASeq.count( 'G' )
-NumberC = DNASeq.count( 'C' )
-
-
-print ('A: {:.2f}'.format ( NumberA / SeqLength ) )
-print ('T: {:.2f}'.format ( NumberT / SeqLength ) )
-print ('G: {:.2f}'.format ( NumberG / SeqLength ) )
-print ('C: {:.2f}'.format ( NumberC / SeqLength ) )
-
-TotalStrong = NumberG + NumberC
-TotalWeak = NumberA + NumberT
 
 if SeqLength <=14: 
 	MeltTemp = ( 4 * TotalStrong) + (2* TotalWeak )

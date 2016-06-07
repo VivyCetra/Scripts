@@ -25,6 +25,7 @@ AminoDict = {'A': 89.09,
 
 
 MolWeight = 0.0
+
 for AminoAcid in ProteinSeq:
 	print( 'AminoAcid: {}, weight: {}'.format (AminoAcid, AminoDict[ AminoAcid ] ) ) 
 	MolWeight = MolWeight + AminoDict [ AminoAcid ]
